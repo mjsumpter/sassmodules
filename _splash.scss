@@ -1,0 +1,39 @@
+/*Home Page Splash Styles*/
+
+.splash {
+	position: relative;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+
+	&__photo {
+		position: absolute;
+		z-index: 0;
+		object-fit: cover;
+		height: 100%;
+		width: 100%;
+		opacity: 0.6;
+	}
+
+	&__tagline {
+		@extend %display-text-uc;
+		position: absolute;
+		bottom: 5%;
+		width: 100%;
+		font-size: $font-h3;
+		text-align: center;
+		text-shadow: $font-shadow;
+		line-height: $base__line;
+	}
+
+	&__scrollarrow {
+		position: absolute;
+		bottom: 1%;
+		width: 100%;
+		font-size: $font-h4;
+		text-align: center;
+		text-shadow: $font-shadow;
+		cursor: pointer;
+	}
+}

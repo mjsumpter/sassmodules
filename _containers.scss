@@ -1,0 +1,23 @@
+/*Containers*/
+
+.grid-item {
+	@include grid-item-name($home-grid-items);
+}
+
+.thumb-container {
+	height: 7rem;
+	width: 7rem;
+	padding: 5px 0;
+	@media #{$brk-sm} {
+		height: 11.25rem;
+		width: 11.25rem;
+	}
+
+	&__thumb {
+		max-width: 100%;
+		max-height: 100%;
+		border-radius: 30px;
+	}
+}
+
+

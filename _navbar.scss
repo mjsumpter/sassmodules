@@ -1,0 +1,62 @@
+/*Navbar styles*/
+
+
+// vertical navbar
+.side-nav {
+	background-color: $primary-background;
+	width: 250px;
+	height: 100%;
+	color: $primary-text;
+	position: fixed;	
+	top: 0;
+	overflow-x: hidden;
+	font-weight: $body-weight--heavy;
+	z-index: 200;
+	padding-top: 60px;
+	transition: 0.5s;
+
+	&--hidden {
+		width: 0;
+	}
+
+	&--right {
+		right: 0;
+		text-align: right;
+	}
+
+	&__menulogo {
+		display: initial;
+		&--hidden {
+			display: none;
+		}
+	}
+
+	&__link {
+		color: $primary-text;
+		padding: 8px 8px 8px 32px;
+		text-decoration: none;
+		font-size: $font-h4;
+		display: block;
+		transition: 0.3s;
+		z-index: 200;
+
+		&--closebtn {
+			&-left {
+				@extend %close-btn;
+				left: 0;
+			}
+		}
+
+		&:hover {
+			@media #{$brk-narrow} {
+				color: $primary-background;
+				background: $primary-text;
+			}
+
+			&:not(:first-child) {
+				color: $primary-background;
+				background: $primary-text;
+			}
+		}
+	}
+}

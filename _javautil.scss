@@ -1,0 +1,20 @@
+/*For fade in effect*/
+@keyframes slide-in {
+    to { transform: translateY(0); }
+}
+
+.js-slide-in-element {
+	transform: translateY(150px);
+  	animation: slide-in 0.6s ease forwards;
+}
+
+.js-slide-in-element:nth-child(odd) {
+	animation-duration: 0.9s;  /* For stagger effect */
+}
+/*end fade in*/
+
+/*Java hover class*/
+.js-hover-button {
+	transform: scale(0.97);
+	cursor: pointer;
+}
